@@ -1,0 +1,8 @@
+{
+  "name": "WorkShopStudio",
+  "app_id": "e5e10617",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
