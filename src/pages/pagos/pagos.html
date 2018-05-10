@@ -1,0 +1,28 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>
+            Compras
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding id="page3">
+    <h3 id="pagos-heading1" style="color:#000000;">
+        Ultimas compras
+    </h3>
+    <ion-list id="pagos-list2">
+        <ion-item color="none" id="pagos-list-item9">
+            <ion-icon name="cash" item-left></ion-icon>
+            Minisplits y materiales
+        </ion-item>
+        <ion-item color="none" id="pagos-list-item11">
+            <ion-icon name="cash" item-left></ion-icon>
+            Información no disponible
+        </ion-item>
+    </ion-list>
+    <ion-fab right bottom color="fabcustom">
+        <button ion-fab (click)="goto()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>

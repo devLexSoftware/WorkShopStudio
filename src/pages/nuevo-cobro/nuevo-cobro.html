@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Nuevo Cobro
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page11">
+  <h3 id="nuevoCobro-heading9" style="color:#000000;">
+    Detalles
+  </h3>
+  <form id="nuevoCobro-form5">
+    <ion-item id="nuevoCobro-select5">
+      <ion-label>
+        Obras
+      </ion-label>
+      <ion-select name="SEL_ObrasPago">
+        <ion-option></ion-option>
+        <ion-option>
+          No hay obras disponibles
+        </ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item id="nuevoCobro-input13">
+      <ion-label></ion-label>
+      <ion-input type="text" placeholder="Descripción" name="TXT_DescripcionPago"></ion-input>
+    </ion-item>
+    <ion-item id="nuevoCobro-input14">
+      <ion-label></ion-label>
+      <ion-input type="text" placeholder="Monto" name="TXT_MontoPago"></ion-input>
+    </ion-item>
+    <ion-item id="nuevoCobro-input15">
+      <ion-label>
+        Fecha Actual
+      </ion-label>
+      <ion-input type="text" placeholder="" name="TXT_FechaGuardaPago"></ion-input>
+    </ion-item>
+  </form>
+  <button id="nuevoCobro-button9" ion-button color="assertive" block>
+    Cargar Comprobantes
+  </button>
+  <button id="nuevoCobro-button10" ion-button color="balanced" block>
+    Guardar
+  </button>
+</ion-content>

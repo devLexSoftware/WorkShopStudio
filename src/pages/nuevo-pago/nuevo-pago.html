@@ -1,0 +1,50 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>
+            Nueva compra
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+<ion-content padding id="page8">
+    <h3 id="nuevoPago-heading3" style="color:#000000;">
+        Detalles
+    </h3>
+
+
+    <ion-item>
+        <ion-label>Obra</ion-label>
+        <ion-select [(ngModel)]="save.obra" submitText="Okay" cancelText="cancel" name="TXT_Obra">
+            <ion-option value="default">Default</ion-option>
+            <ion-option *ngFor="let obra of obras" [value]="obra.id">{{obra.nombre}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-item>
+        <ion-label>Fecha</ion-label>
+        <ion-datetime displayFormat="DD/MMM/YYYY" [(ngModel)]="save.fecha"></ion-datetime>
+    </ion-item>
+
+    <ion-item id="nuevoPago-input8">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Remitente " name="TXT_RemitentePago"></ion-input>
+    </ion-item>
+    <ion-item id="nuevoPago-input9">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Descripción" name="TXT_DescripcionPago"></ion-input>
+    </ion-item>
+    <ion-item id="nuevoPago-input10">
+        <ion-label></ion-label>
+        <ion-input type="text" placeholder="Monto" name="TXT_MontoPago"></ion-input>
+    </ion-item>
+
+    <ion-fab right bottom color="fabcustom">
+        <button ion-fab (click)="goto(save.obra, save.fecha)"><ion-icon name="camera"></ion-icon></button>
+    </ion-fab>
+
+    <button id="nuevoPago-button5" ion-button color="balanced" block>
+    Guardar
+  </button>
+</ion-content>
